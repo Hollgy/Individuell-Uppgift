@@ -1,0 +1,77 @@
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="block">
+                <h4>Bättre Webb välkomnar dig till Codemas</h4>
+                <div class="box">
+                    <a class="button" href="#popup1">Boka besökspass</a>
+                </div>
+                <div id="popup1" class="overlay">
+                    <div class="form">
+                        <h2>Beställ Besökspass</h2>
+                        <a class="close" href="#">&#9747;</a>
+                        <div class="content">
+                            <h5> * Välj önskat antal besöksdagar </h5>
+                        </div>
+                        <div class="choice">
+                            <select name="my-select" id="dagar">
+                                <option value="opt1">Samtliga Dagar</option>
+                                <option value="opt2">Fredag 9/12</option>
+                                <option value="opt3">Lördag 10/12</option>
+                                <option value="opt4">Söndag 11/12</option>
+                            </select>
+                        </div>
+                        <div class="personal-info">
+                            <label for="email">E-post Adress</label>
+                            <input type="email" name="email" id="email" title="must be a valid Email"
+                                placeholder="E-post">
+                        </div>
+                        <div class="personal-info">
+                            <label for="password">Lösenord</label>
+                            <input title="måste vara minst 8 tecken långt" type="password" pattern="[a-öA-Ö0-9]{8,}"
+                            id="password" type="text" required>
+                            <p class="input-hint">*Måste vara minst 8 tecken långt</p>
+                        </div>
+                        <button class="submit">Anmäl</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <h4>Fre 9/12</h4>
+                <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, </p>
+            </div>
+            <div class="block">
+                <h4>Lör 10/12</h4>
+                <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, </p>
+            </div>
+            <div class="block">
+                <h4>Sön 11/12</h4>
+                <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, </p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <img src="/images/betterweb.png" alt="logotyp">
+        
+    </footer>
+
+</body>
+
+</html>
