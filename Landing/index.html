@@ -13,66 +13,70 @@
 </head>
 
 <body>
-    
+
     <header>
-        
+
         <img src="/images/betterweb.png" alt="logotyp">
 
     </header>
 
     <main>
-        <div class="container">
-            <h1>Bättre Webb välkomnar dig till årets event</h1>
-            <div class="block">
-                <div class="box">
-                    <a class="button" href="#popup1">Boka besökspass</a>
-                </div>
-                <div id="popup1" class="overlay">
-                    <div class="form">
-                        <h2>Beställ Besökspass</h2>
-                        <a class="close" href="#">&#9747;</a>
-                        <div class="content">
-                            <h5> * Välj önskat antal besöksdagar </h5>
-                        </div>
-                        <div class="choice">
-                            <select name="my-select" id="dagar">
-                                <option value="opt1">Samtliga Dagar</option>
-                                <option value="opt2">Fredag 9/12</option>
-                                <option value="opt3">Lördag 10/12</option>
-                                <option value="opt4">Söndag 11/12</option>
-                            </select>
-                        </div>
-                        <div class="personal-info">
-                            <label for="email">E-post Adress</label>
-                            <input type="email" name="email" id="email" title="must be a valid Email"
-                                placeholder="E-post">
-                        </div>
-                        <div class="personal-info">
-                            <label for="password">Lösenord</label>
-                            <input title="måste vara minst 8 tecken långt" type="password" pattern="[a-öA-Ö0-9]{8,}"
-                                id="password" type="text" required>
-                            <p class="input-hint">*Måste vara minst 8 tecken långt</p>
-                        </div>
-                        <button class="submit">Anmäl</button>
-                    </div>
-                </div>
-            </div>
-            <div class="block">
-                <h4>Fre 9/12</h4>
-                <p>What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. </p>
-                <a class=fancy href="">Mer info</a>
-            </div>
-            <div class="block">
-                <h4>Lör 10/12</h4>
-                <p>What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. </p>
-                <a class="fancy" href="">Mer info</a>
-            </div>
-            <div class="block">
-                <h4>Sön 11/12</h4>
-                <p>What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words.</p>
-                <a class="fancy" href="">Mer info</a>
-            </div>
+
+        <div class="button__box">
+            <a class="button" href="#popup1">Anmäl</a>
         </div>
+        <div class="background" id="overlay">
+            <div class="form-container">
+                <a class="close" href="#">&times;</a>
+                <p class="form-header">Anmäl Dig</p>
+                <form>
+                    <div class="form-table">
+                        <tr>
+                            <td>Epost Adress:</td>
+                            <td><input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required></td>
+                        </tr>
+                        <tr>
+                            <td>Förnamn:</td>
+                            <td><input type="text" name="" id="" required></td>
+                        </tr>
+                        <tr>
+                            <td>Efternamn:</td>
+                            <td><input type="text" name="" id="" required></td>
+                        </tr>
+                        <tr>
+                            <td>Födelsedatum:</td>
+                            <td><input type="date" name="" id="" required></td>
+                        </tr>
+                        <tr>
+                            <td>Telefonnummer:</td>
+                            <td><input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="radio" id="Man" name="genderM" value="man">
+                                    <label for="Kött">Man</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="radio" id="Kvinna" name="genderF" value="kvinna" checked>
+                                    <label for="Fisk">Kvinna</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div>
+                                <td><input type="radio" name="Godkänner" id="agree"></td>
+                                <label for="agree">Jag godkännerhar fyllt i alla fälten korrekt</label>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br /> <input type="submit" value="Submit"></td>
+                        </tr>
+                    </div>
+                </form>
     </main>
 
     <footer>
