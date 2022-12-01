@@ -52,29 +52,22 @@
                             <td><input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <input type="radio" id="Man" name="genderM" value="man">
-                                    <label for="Kött">Man</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <input type="radio" id="Kvinna" name="genderF" value="kvinna" checked>
-                                    <label for="Fisk">Kvinna</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
+                        <fieldset>
+                            <legend>Välj ditt kön</legend>
                             <div>
-                                <td><input type="radio" name="Godkänner" id="agree"></td>
-                                <label for="agree">Jag godkännerhar fyllt i alla fälten korrekt</label>
+                                <label for="Man">Man</label>
+                                <input type="radio" id="gender" name="gender" value="M">
                             </div>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><br /> <input type="submit" value="Submit"></td>
-                        </tr>
+                            <div>
+                                <label for="Kvinna">Kvinna</label>
+                                <input type="radio" id="gender" name="gender" value="K">
+                            </div>
+                        </fieldset>
+                        <div>
+                            <input type="checkbox" name="Godkänner" id="agree">
+                            <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
+                        </div>
+                        <div colspan="2"><br /> <input type="submit" value="Submit"></div>
                     </div>
                 </form>
     </main>
