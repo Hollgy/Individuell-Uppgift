@@ -130,6 +130,8 @@ fieldset {
 
 /* End of MAIN start of FOOTER */
 
+
+ /* FIX FOOTER WHEN QUERY OVERLAP */
 footer {
     background-color: rgba(0, 60, 128, 0.75);
     height: 10vh;
