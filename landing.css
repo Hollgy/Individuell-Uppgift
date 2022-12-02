@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/Landing/images/pexels-neo-2653362.jpg);
+    background-image: url(/images/pexels-neo-2653362.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -18,19 +18,19 @@ body {
 /* End of BODY start of HEADER  */
 
 header {
+    display: flex;
+    justify-content: center;
     height: 8vh;
-    border-bottom: 1px solid rgb(33, 33, 33);
+    width: 100%;
+    border-bottom: 1px solid rgba(33, 33, 33, );
+    background-color: rgba(0, 0, 22, 0.034);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
-    background-color: black;
-    opacity: 0.6;
 }
 
 img {
-    opacity: 1;
     height: 80%;
-    margin-left: 1em;
 }
 
 /* End of HEADER Start of MAIN */
@@ -45,24 +45,12 @@ main {
     height: 100%;
 }
 
-
-.background{
-    position: fixed;
+.background {
+    position: absolute;
     width: 80%;
     height: 80%;
-    background-color: rgba( 0.3 , 30,30,30, 0.3);
-    font-family: sans-serif; } 
-    
-a.button {
-    margin-top: 1em;
-    width: 1em;
-    height: 1em;
-    background-color: green;
-    padding: 1em;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    border-radius: 0.3em;
+    background-color: rgba(0.3, 30, 30, 30, 0.3);
+    font-family: sans-serif;
 }
 
 .form-container {
@@ -74,13 +62,6 @@ a.button {
     transform: translate(-50%, -50%);
     background: rgb(24, 24, 24);
     box-shadow: 2px 2px 2px;
-    /* display: none; */
-}
-
-.close {
-    position: absolute;
-    margin-right: 1px;
-    margin-top: 1px;
 }
 
 .form-header {
@@ -111,25 +92,20 @@ a.button {
     cursor: pointer;
 }
 
-
-
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
     width: auto;
     margin-top: 5px;
 }
-input[type="radio"], input[type="checkbox"]:hover {
+
+input[type="radio"],
+input[type="checkbox"]:hover {
     cursor: pointer;
 }
 
 fieldset {
     border: none;
 }
-
-
-/* End main start footer */
-
-
-
 
 
 /* End of MAIN start of FOOTER */
@@ -154,12 +130,6 @@ footer {
         box-shadow: 0px 0px 5px grey;
     }
 
-    .box {
-        width: 30%;
-        margin: 5px auto;
-        background-color: #050517;
-        padding: 5px;
-    }
 
     @media (min-width: 500px) {
 

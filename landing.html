@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
@@ -15,43 +15,26 @@
 <body>
 
     <header>
-
         <img src="/images/betterweb.png" alt="logotyp">
-
     </header>
 
     <main>
-
-        <div class="button__box">
-            <a class="button" href="#popup1">Anmäl</a>
-        </div>
         <div class="background" id="overlay">
             <div class="form-container">
-                <a class="close" href="#">&times;</a>
                 <p class="form-header">Anmäl Dig</p>
                 <form>
                     <div class="form-table">
-                        <tr>
-                            <td>Epost Adress:</td>
-                            <td><input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required></td>
-                        </tr>
-                        <tr>
-                            <td>Förnamn:</td>
-                            <td><input type="text" name="firstname" id="first_name" required></td>
-                        </tr>
-                        <tr>
-                            <td>Efternamn:</td>
-                            <td><input type="text" name="surname" id="first_name" required></td>
-                        </tr>
-                        <tr>
-                            <td>Födelsedatum:</td>
-                            <td><input type="date" name="date" id="date" required></td>
-                        </tr>
-                        <tr>
-                            <td>Telefonnummer:</td>
-                            <td><input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
-                            </td>
-                        </tr>
+                        <label>Epost Adress: </label>
+                        <input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required>
+                        <label>Förnamn: </label>
+                        <input type="text" name="firstname" id="first_name" required>
+                        <label>Efternamn: </label>
+                        <input type="text" name="surname" id="first_name" required>
+                        <label>Födelsedatum: </label>
+                        <input type="date" name="date" id="date" required>
+                        <label>Telefonnummer: </label>
+                        <input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
+
                         <fieldset>
                             <legend>Välj ditt kön</legend>
                             <div>
