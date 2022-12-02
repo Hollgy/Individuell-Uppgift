@@ -19,11 +19,21 @@
     </header>
 
     <main>
-        <div class="background" id="overlay">
-            <div class="form-container">
-                <p class="form-header">Anmäl Dig</p>
-                <form>
-                    <div class="form-table">
+
+        <div class="block">
+            <h1>Bättre Webb välkommnar dig till årets event</h1>
+            <div class="eventblock">
+                <div>
+                    <p>Välkommen att delta i årets 10 olika seminarier under helgen 9/12-11/12</p>
+                    <p>På Schemat står bland annat presentationer av relevanta talespersoner, B.la Sam Hyde med "Paradign Shift 2070"</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="background">
+                <!-- <div class="form-table"> -->
+                        <p class="form-header">Anmäl Dig</p>
                         <label>Epost Adress: </label>
                         <input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required>
                         <label>Förnamn: </label>
@@ -32,11 +42,15 @@
                         <input type="text" name="surname" id="first_name" required>
                         <label>Födelsedatum: </label>
                         <input type="date" name="date" id="date" required>
+                        <label>Adress: </label>
+                        <input type="text" name="date" id="date" required>
+                        <label>Postkod: </label>
+                        <input type="text" name="date" id="date" required minlength="5" maxlength="6">
                         <label>Telefonnummer: </label>
                         <input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
 
                         <fieldset>
-                            <legend>Välj ditt kön</legend>
+                            <legend>Välj ditt kön:</legend>
                             <div>
                                 <label for="Man">Man</label>
                                 <input type="radio" id="gender" name="gender" value="M">
@@ -50,12 +64,13 @@
                             <input type="checkbox" name="Godkänner" id="agree">
                             <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
                         </div>
-                        <div colspan="2"><br /> <input type="submit" value="Submit"></div>
-                    </div>
-                </form>
+                        <div class="submit"> <input type="submit" value="Submit"></div>
+                <!-- </div> -->
+        </div>
     </main>
 
     <footer>
+        <div></div>
     </footer>
 
 </body>
