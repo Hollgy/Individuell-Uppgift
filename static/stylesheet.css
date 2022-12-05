@@ -6,11 +6,17 @@
     box-sizing: border-box;
 }
 
+* p,
+a,
+h3 {
+    color: white;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/images/pexels-neo-2653362.jpg);
+    background-image: url(../static/images/pexels-neo-2653362.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -21,6 +27,7 @@ body {
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 8vh;
     width: 100%;
     border-bottom: 1px solid rgb(33, 33, 33);
@@ -32,22 +39,21 @@ header {
 }
 
 img {
-    height: 80%;
+    height: 3em;
+    width: 5em;
     opacity: 0.6;
     border-radius: 0.3em;
 }
 
-.linklist {
-    display: flex;
-    text-decoration: ;
-    margin-right: 1em ;
-    align-items: center;
-}
+.linklist {}
+
 .link-landing {
     text-decoration: none;
     width: 2em;
     height: 1.2em;
     padding: 0.5em;
+    background-color: blueviolet;
+    border-radius: 0.3em;
 }
 
 /* End of HEADER Start of MAIN */
@@ -57,37 +63,39 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0.5em;
+    padding: 0.7em;
+    background-color: rgba(43, 50, 54, 0.8);
+    width: 80%;
+    border-radius: 0.3em;
 }
 
-.block, .block-day {
+.block {
     background-color: rgba(184, 166, 166, 0.);
     width: 70%;
     text-align: center;
     margin: 0.5em;
+    padding: 0.5em;
+    border:solid 1px rgba(0.3 ,30 ,30 ,30 );
 }
 
-
-* p,
-a {
-    color: white;
+.block-event {
+    margin: auto;
 }
 
 .block>h1,
-.block-day>h3 {
+.block-event>h3 {
     color: white;
     width: auto;
 }
 
 .background {
     background-color: rgba(0.3, 30, 30, 30, 0.7);
-    width: 100%;
-    height: 650px;
+    width: 70%;
+    height: 450px;
     font-family: sans-serif;
-    width: 100%;
     padding: 1em;
     color: white;
 }
-
 
 .form-header {
     color: white;
@@ -108,17 +116,23 @@ a {
     width: 100%;
     padding: 5px;
     background: transparent;
-    color-scheme: dark
-    ;
+    color-scheme: dark;
 }
 
 .background input[type="submit"] {
     color: black;
     padding: 1.2em;
     cursor: pointer;
+    margin: 0.3em;
 }
-
-
+.background input[type="submit"]:focus {
+    color: black;
+    padding: 1.2em;
+    cursor: pointer;
+    margin: 0.3em;
+    background-color: green;
+    transition: 350ms ease-in                   ;
+}
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -127,19 +141,26 @@ input[type="checkbox"] {
     padding: 0.5em;
 }
 
+.allergi>input {
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    text-align: start;
+}
 
 fieldset {
     border: none;
     margin: 1em;
 }
 
-
 /* End of MAIN start of FOOTER */
 
 
 /* FIX FOOTER WHEN QUERY OVERLAP */
 footer {
-    margin-top: 8em;
+    margin-top: 5em;
     bottom: 0;
     background-color: rgba(0.3, 30, 30, 30, 0.7);
     height: 10vh;
@@ -148,19 +169,27 @@ footer {
 }
 
 /* End of FOOTER start of querys */
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
     .background {
+        background-color: rgba(0.3, 30, 30, 30, 0.7);
         width: 15%;
+        height: 450px;
+        font-family: sans-serif;
+        padding: 1em;
+        color: white;
     }
+
     img:hover {
         opacity: 1;
     }
+
     input {
         cursor: pointer;
         width: 40%;
         color-scheme: dark;
     }
-    
+
+
 }
 
 @media (min-width: 800px) {
@@ -170,12 +199,15 @@ footer {
         width: 100%
     }
 
-    .block:hover, .block-day:hover {
+    .block:hover,
+    .block-day:hover {
         background-color: rgba(0, 60, 128, 0.75);
         transition: 230ms ease-in;
     }
 
-    .background, .block, .block-day {
+    .background,
+    .block,
+    .block-day {
         width: 45%;
     }
 
@@ -189,6 +221,7 @@ footer {
         width: 40%;
         color-scheme: dark;
     }
+
     header:hover {
         background-color: rgba(0, 60, 128, 0.75);
         transition: 230ms ease-in;
@@ -198,6 +231,7 @@ footer {
         background-color: rgba(0, 60, 128, 0.75);
         transition: 230ms ease-in;
     }
+
     img:hover {
         opacity: 1;
     }
@@ -208,6 +242,7 @@ footer {
     .background {
         width: 50%;
     }
+
     input {
         cursor: pointer;
         width: 40%;
@@ -221,4 +256,4 @@ footer {
     .background {
         width: 50%;
     }
-}
+} */

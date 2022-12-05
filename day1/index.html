@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" type="iamge/x-icon" href="/images/favicon-16x16.png">
+    <link rel="icon" type="iamge/x-icon" href="../static/images/favicon-16x16.png">
 </head>
 
 <body>
 
     <header>
-        <img src="/images/Better web black.png" alt="logotyp">
+        <img class="logotyp" src="../static/images/Better web black.png" alt="logotyp">
         <div class="linklist">
             <div><a class="link-landing" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
 
@@ -26,77 +26,81 @@
     <main>
 
         <div class="block">
-            <h1>Bättre Webb välkommnar dig till årets event</h1>
-            <div class="eventblock">
-                <div>
-                    <p>Välkommen att delta i årets 10 olika seminarier under helgen 9/12-11/12</p>
-                    <p>På Schemat står bland annat presentationer av relevanta talespersoner, B.la Sam Hyde med
-                        "Paradign Shift 2070"</p>
-                </div>
+            <h1>Fredagen den 9/12</h1>
+            <div class="block-event">
+                <p>15:00 Start på seminariet</p>
+                <p>Seminariet inleds med ett välkommnande från kommitén.
+                    Därefter hålls den första presentationen av Journalisten och Video Dokumentatorn "Sam Hyde". <br>
+                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
+                </p>
+                <!-- <iframe class="responsive-iframe" width="250" height="150"
+                    src="https://www.youtube.com/embed/4jRoatZizQ0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> -->
             </div>
         </div>
-
-        <div class="block-day">
-            <h3>Fredag 9/12</h3>
-            <div class="day">
-                <div>
-                    <p>Start 17:00 - Kortfilm och start av helgen med potions seller</p>
-                    <a href="">Klicka här för att läsa mer om Fredagen</a>
-                </div>
+        <div class="block">
+            <h1>17:00</h1>
+            <div class="block-event">
+                <p> Presentation av SolidJS </p>
+                <p> Vi fortsätter seminariet med en presentation av det nya fullt reaktiva programvaran SolidJS, på
+                    plats för att presentera detta är dess skapare "Ryan Carniato"
+                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
+                </p>
             </div>
         </div>
-        <div class="block-day">
-            <h3>Lördag 10/12</h3>
-            <div class="day">
-                <div>
-                    <p>Start av dagen 11:00 - Presentation från </p>
-                    <a href="">Klicka här för att läsa mer om Lördagen</a>
-                </div>
+        <div class="block">
+            <h1>18:30</h1>
+            <div class="block-event">
+                <p> Middag Serveras </p>
+                <p>Seminariet inleds med ett välkommnande från kommitén.
+                    Därefter hålls den första presentationen av Journalisten och Video Dokumentatorn Sam Hyde.
+                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
+                </p>
             </div>
         </div>
-        <div class="block-day">
-            <h3>Söndag 11/12</h3>
-            <div class="day">
-                <div>
-                    <p>Start av dagen 11:00</p>
-                    <a href="">Klicka här för att läsa mer om Söndagen</a>
-                </div>
+        <div class="block">
+            <h1>20:00</h1>
+            <div class="block-event">
+                <p>Visning av The Matrix</p>
+                <p>Seminariet inleds med ett välkommnande från kommitén.
+                    Därefter hålls den första presentationen av Journalisten och Video Dokumentatorn Sam Hyde.
+                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
+                </p>
             </div>
         </div>
-
         <div class="background">
-            <p class="form-header">Anmäl Dig</p>
-            <label>Epost Adress: </label>
-            <input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required>
-            <label>Förnamn: </label>
-            <input type="text" name="firstname" id="first_name" required>
-            <label>Efternamn: </label>
-            <input type="text" name="surname" id="first_name" required>
-            <label>Födelsedatum: </label>
-            <input type="date" name="date" id="date" value="2000-01-01" required>
-            <label>Adress: </label>
-            <input type="text" name="adress" id="adress" required>
-            <label>Postkod: </label>
-            <input type="text" name="zip" id="zip" required minlength="5" maxlength="6">
-            <label>Telefonnummer: </label>
-            <input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
-
+            <p class="form-header">Välj Mat för 9/12</p>
             <fieldset>
-                <legend>Välj ditt kön:</legend>
+                <legend>Önskad typ av protein:</legend>
                 <div>
-                    <label for="Man">Man</label>
-                    <input type="radio" id="gender" name="gender" value="M">
+                    <label for="Kött">Kött</label>
+                    <input type="radio" id="#meat" name="meat" value="K">
                 </div>
                 <div>
-                    <label for="Kvinna">Kvinna</label>
-                    <input type="radio" id="gender" name="gender" value="K">
+                    <label for="Fisk">Fisk</label>
+                    <input type="radio" id="#fish" name="meat" value="F">
                 </div>
+                <div>
+                    <label for="Kyckling">Kyckling</label>
+                    <input type="radio" id="#chick" name="meat" value="C">
+                </div>
+                <div>
+                    <label for="Vegan">Vegansk</label>
+                    <input type="radio" id="#vegan" name="meat" value="V">
+                </div>
+                <div class="allergi">
+                    <label for="Allergi">Allergier</label>
+                    <input type="text" id="allergi" name="allergi"
+                        placeholder="Var god och fyll i om du har några allergier">
+                </div>
+                <p><small> Maten betalas på plats*</small> </p>
             </fieldset>
             <div>
-                <input type="checkbox" name="Godkänner" id="agree">
-                <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
+                <input type="checkbox" name="Godkänner" id="agree" required>
+                <label for="agree">Jag är klar med mitt val</label>
             </div>
-            <div class="submit"> <input type="submit" value="Submit"></div>
+            <div class="submit"> <input type="submit" value="Submit" onfocus="this.placeholder"></div>
         </div>
     </main>
 
