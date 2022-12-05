@@ -10,12 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="iamge/x-icon" href="/images/favicon-16x16.png">
 </head>
 
 <body>
 
     <header>
-        <img src="/images/betterweb.png" alt="logotyp">
+        <img src="/images/Better web black.png" alt="logotyp">
+        <div class="linklist">
+            <div><a class="link-landing" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
+
+        </div>
     </header>
 
     <main>
@@ -25,45 +30,73 @@
             <div class="eventblock">
                 <div>
                     <p>Välkommen att delta i årets 10 olika seminarier under helgen 9/12-11/12</p>
-                    <p>På Schemat står bland annat presentationer av relevanta talespersoner, B.la Sam Hyde med "Paradign Shift 2070"</p>
+                    <p>På Schemat står bland annat presentationer av relevanta talespersoner, B.la Sam Hyde med
+                        "Paradign Shift 2070"</p>
                 </div>
             </div>
         </div>
 
+        <div class="block-day">
+            <h3>Fredag 9/12</h3>
+            <div class="day">
+                <div>
+                    <p>Start 17:00 - Kortfilm och start av helgen med potions seller</p>
+                    <a href="">Klicka här för att läsa mer om Fredagen</a>
+                </div>
+            </div>
+        </div>
+        <div class="block-day">
+            <h3>Lördag 10/12</h3>
+            <div class="day">
+                <div>
+                    <p>Start av dagen 11:00 - Presentation från </p>
+                    <a href="">Klicka här för att läsa mer om Lördagen</a>
+                </div>
+            </div>
+        </div>
+        <div class="block-day">
+            <h3>Söndag 11/12</h3>
+            <div class="day">
+                <div>
+                    <p>Start av dagen 11:00</p>
+                    <a href="">Klicka här för att läsa mer om Söndagen</a>
+                </div>
+            </div>
+        </div>
 
         <div class="background">
-                        <p class="form-header">Anmäl Dig</p>
-                        <label>Epost Adress: </label>
-                        <input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required>
-                        <label>Förnamn: </label>
-                        <input type="text" name="firstname" id="first_name" required>
-                        <label>Efternamn: </label>
-                        <input type="text" name="surname" id="first_name" required>
-                        <label>Födelsedatum: </label>
-                        <input type="date" name="date" id="date" required>
-                        <label>Adress: </label>
-                        <input type="text" name="date" id="date" required>
-                        <label>Postkod: </label>
-                        <input type="text" name="date" id="date" required minlength="5" maxlength="6">
-                        <label>Telefonnummer: </label>
-                        <input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
+            <p class="form-header">Anmäl Dig</p>
+            <label>Epost Adress: </label>
+            <input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required>
+            <label>Förnamn: </label>
+            <input type="text" name="firstname" id="first_name" required>
+            <label>Efternamn: </label>
+            <input type="text" name="surname" id="first_name" required>
+            <label>Födelsedatum: </label>
+            <input type="date" name="date" id="date" value="2000-01-01" required>
+            <label>Adress: </label>
+            <input type="text" name="adress" id="adress" required>
+            <label>Postkod: </label>
+            <input type="text" name="zip" id="zip" required minlength="5" maxlength="6">
+            <label>Telefonnummer: </label>
+            <input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
 
-                        <fieldset>
-                            <legend>Välj ditt kön:</legend>
-                            <div>
-                                <label for="Man">Man</label>
-                                <input type="radio" id="gender" name="gender" value="M">
-                            </div>
-                            <div>
-                                <label for="Kvinna">Kvinna</label>
-                                <input type="radio" id="gender" name="gender" value="K">
-                            </div>
-                        </fieldset>
-                        <div>
-                            <input type="checkbox" name="Godkänner" id="agree">
-                            <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
-                        </div>
-                        <div class="submit"> <input type="submit" value="Submit"></div>
+            <fieldset>
+                <legend>Välj ditt kön:</legend>
+                <div>
+                    <label for="Man">Man</label>
+                    <input type="radio" id="gender" name="gender" value="M">
+                </div>
+                <div>
+                    <label for="Kvinna">Kvinna</label>
+                    <input type="radio" id="gender" name="gender" value="K">
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="Godkänner" id="agree">
+                <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
+            </div>
+            <div class="submit"> <input type="submit" value="Submit"></div>
         </div>
     </main>
 
