@@ -80,12 +80,6 @@ main {
     border:solid 1px rgba(0.3 ,30 ,30 ,30);
 }
 
-.block-person {
-
-}
-
-.persona {
-}
 .block-event {
     margin: auto;
 }
@@ -105,6 +99,14 @@ main {
     color: white;
 }
 
+.block-person > .Persona {
+    width: 250px ;
+    height: 250px;
+    opacity: 1;
+    border-radius: 6em;
+}
+
+/* Forms Relaterade Klasser */
 .form-header {
     color: white;
     text-align: center;
@@ -163,6 +165,8 @@ fieldset {
     border: none;
     margin: 1em;
 }
+
+
 
 
 
