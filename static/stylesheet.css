@@ -80,6 +80,12 @@ main {
     border:solid 1px rgba(0.3 ,30 ,30 ,30);
 }
 
+.block-person {
+
+}
+
+.persona {
+}
 .block-event {
     margin: auto;
 }
