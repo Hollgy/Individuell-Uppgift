@@ -17,20 +17,20 @@
 
     <header>
         <img class="logotyp" src="../static/images/Better web black.png" alt="logotyp">
-        <div class="linklist">
-            <div><a class="link-landing" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
 
-        </div>
+            <div><a class="link-landing" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
+            <div><a class="link-landing" href="">Om oss</a></div>
+
     </header>
 
     <main>
 
         <div class="block">
-            <h1>Fredagen den 9/12</h1>
+            <h1>15:00</h1>
             <div class="block-event">
-                <p>15:00 Start på seminariet</p>
-                <p>Seminariet inleds med ett välkommnande från kommitén.
-                    Därefter hålls den första presentationen av Journalisten och Video Dokumentatorn "Sam Hyde". <br>
+                <p><strong>Välkommnande - Paradigm Shift</strong></p>
+                <p>Seminariet inleds med ett välkomsttal från kommitén.
+                    Därefter hålls den första presentationen av Journalisten och Video-dokumentatorn Sam Hyde. <br>
                     Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
                 </p>
                 <!-- <iframe class="responsive-iframe" width="250" height="150"
@@ -40,54 +40,51 @@
             </div>
         </div>
         <div class="block">
+            <h1>16:00</h1>
+            <div class="block-event">
+                <p> <strong>SolidJS</strong> </p>
+                <p> Vi fortsätter seminariet med en presentation av det nya fullt reaktiva programvaran SolidJS, på
+                    plats för att presentera detta är dess skapare Ryan Carniato
+                    Presentationen varar ca 40 minuter och uppföljs sedan av Q&A samt paus.
+                </p>
+            </div>
+        </div>
+        <div class="block">
             <h1>17:00</h1>
             <div class="block-event">
-                <p> Presentation av SolidJS </p>
-                <p> Vi fortsätter seminariet med en presentation av det nya fullt reaktiva programvaran SolidJS, på
-                    plats för att presentera detta är dess skapare "Ryan Carniato"
-                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
+                <p><strong>Framtiden, Grön Energi och Megaservrar</strong></p>
+                <p>Denna talespunkt leds av den kända youtubern Electroboom, presentationen pågår i ca 1.5h, därefter middag.
                 </p>
             </div>
         </div>
         <div class="block">
-            <h1>18:30</h1>
+            <h1>19:00</h1>
             <div class="block-event">
-                <p> Middag Serveras </p>
-                <p>Seminariet inleds med ett välkommnande från kommitén.
-                    Därefter hålls den första presentationen av Journalisten och Video Dokumentatorn Sam Hyde.
-                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
-                </p>
-            </div>
-        </div>
-        <div class="block">
-            <h1>20:00</h1>
-            <div class="block-event">
-                <p>Visning av The Matrix</p>
-                <p>Seminariet inleds med ett välkommnande från kommitén.
-                    Därefter hålls den första presentationen av Journalisten och Video Dokumentatorn Sam Hyde.
-                    Presentationen varar ca 20 minuter och uppföljs sedan av Q&A.
+                <p><strong>Middag Serveras</strong></p>
+                <p>Måltid serveras i stora salen. OBS  Se till att ha anmält din matpreferens på hemsidan innan. Efter Middagen så är seminariet slut för dagen.
                 </p>
             </div>
         </div>
         <div class="background">
-            <p class="form-header">Välj Mat för 9/12</p>
-            <fieldset>
+            <p class="form-header">Matpreferens för Fredag</p>
+            <form>
                 <legend>Önskad typ av protein:</legend>
+                <p><small>Notera att alla rätter har samma prisklass oavsett primärt innehåll</small></p>
                 <div>
-                    <label for="Kött">Kött</label>
                     <input type="radio" id="#meat" name="meat" value="K">
+                    <label for="Kött">Kött</label>
                 </div>
                 <div>
-                    <label for="Fisk">Fisk</label>
                     <input type="radio" id="#fish" name="meat" value="F">
+                    <label for="Fisk">Fisk</label>
                 </div>
                 <div>
-                    <label for="Kyckling">Kyckling</label>
                     <input type="radio" id="#chick" name="meat" value="C">
+                    <label for="Kyckling">Kyckling</label>
                 </div>
                 <div>
-                    <label for="Vegan">Vegansk</label>
                     <input type="radio" id="#vegan" name="meat" value="V">
+                    <label for="Vegan">Vegansk</label>
                 </div>
                 <div class="allergi">
                     <label for="Allergi">Allergier</label>
@@ -95,13 +92,13 @@
                         placeholder="Var god och fyll i om du har några allergier">
                 </div>
                 <p><small> Maten betalas på plats*</small> </p>
-            </fieldset>
-            <div>
-                <input type="checkbox" name="Godkänner" id="agree" required>
-                <label for="agree">Jag är klar med mitt val</label>
-            </div>
-            <div class="submit"> <input type="submit" value="Submit" onfocus="this.placeholder"></div>
+                <div>
+                    <input type="checkbox" name="Godkänner" id="agree" required>
+                    <label for="agree">Jag är klar med mitt val*</label>
+                </div>
+                <div class="submit"> <input type="submit" value="Submit" onfocus="this.placeholder"></div>
         </div>
+        </form>
     </main>
 
     <footer>
