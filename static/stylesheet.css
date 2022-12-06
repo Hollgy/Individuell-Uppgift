@@ -9,13 +9,17 @@
 * p,
 a,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 h1,
 >>>>>>> day3
+=======
+>>>>>>> about
 h3 {
     color: white;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 main > h1 {
@@ -24,6 +28,8 @@ main > h1 {
     margin-top: 0.5em;
 }
 >>>>>>> day3
+=======
+>>>>>>> about
 body {
     display: flex;
     flex-direction: column;
@@ -111,6 +117,17 @@ main {
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+.block-person > .Persona {
+    width: 250px ;
+    height: 250px;
+    opacity: 1;
+    border-radius: 6em;
+}
+
+/* Forms Relaterade Klasser */
+>>>>>>> about
 .form-header {
     color: white;
     text-align: center;
@@ -172,6 +189,11 @@ fieldset {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> about
 /* End of MAIN start of FOOTER */
 
 
