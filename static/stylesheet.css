@@ -8,28 +8,18 @@
 
 * p,
 a,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 h1,
->>>>>>> day3
-=======
->>>>>>> about
 h3 {
     color: white;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-main > h1 {
+
+main>h1 {
     margin-left: 50%;
     margin-right: 50%;
     margin-top: 0.5em;
 }
->>>>>>> day3
-=======
->>>>>>> about
+
 body {
     display: flex;
     flex-direction: column;
@@ -63,7 +53,7 @@ img {
     border-radius: 0.3em;
 }
 
-svg{
+svg {
     background-color: blueviolet;
     border-radius: 0.3em;
 }
@@ -95,7 +85,7 @@ main {
     text-align: center;
     margin: 0.5em;
     padding: 0.5em;
-    border:solid 1px rgba(0.3 ,30 ,30 ,30);
+    border: solid 1px rgba(0.3, 30, 30, 30);
 }
 
 .block-event {
@@ -117,17 +107,14 @@ main {
     color: white;
 }
 
-<<<<<<< HEAD
-=======
-.block-person > .Persona {
-    width: 250px ;
+.block-person>.Persona {
+    width: 250px;
     height: 250px;
     opacity: 1;
     border-radius: 6em;
 }
 
 /* Forms Relaterade Klasser */
->>>>>>> about
 .form-header {
     color: white;
     text-align: center;
@@ -158,6 +145,7 @@ main {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 0.2em;
 }
+
 .background input[type="submit"]:focus {
     color: black;
     padding: 1.2em;
@@ -187,15 +175,7 @@ fieldset {
     margin: 1em;
 }
 
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> about
 /* End of MAIN start of FOOTER */
-
 
 /* FIX FOOTER WHEN QUERY OVERLAP */
 footer {
@@ -295,4 +275,4 @@ footer {
     .background {
         width: 50%;
     }
-} 
+}
