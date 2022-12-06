@@ -8,10 +8,22 @@
 
 * p,
 a,
+<<<<<<< HEAD
+=======
+h1,
+>>>>>>> day3
 h3 {
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+main > h1 {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 0.5em;
+}
+>>>>>>> day3
 body {
     display: flex;
     flex-direction: column;
