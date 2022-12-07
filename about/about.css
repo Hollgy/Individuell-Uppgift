@@ -6,18 +6,35 @@
     box-sizing: border-box;
 }
 
+:root{
+
+}
+
+* p,
+a,
+h1,
+h3 {
+    color: white;
+}
+
+
+main>h1 {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 0.5em;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/images/pexels-neo-2653362.jpg);
+    background-image: url(../static/images/pexels-neo-2653362.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 
 /* End of BODY start of HEADER  */
-
 
 header {
     display: flex;
@@ -36,7 +53,6 @@ header {
 img {
     height: 3em;
     width: 5em;
-    opacity: 0.6;
     border-radius: 0.3em;
 }
 
@@ -56,134 +72,73 @@ svg {
 
 /* End of HEADER Start of MAIN */
 main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
     min-height: 100%;
+    min-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: no;
+    margin: 0.5em;
+    padding: 0.7em;
     width: 80%;
-    margin: 0.5em;
-}
-
-.block, .block-day {
-    background-color: rgba(184, 166, 166, 0.);
-    width: 70%;
-    text-align: center;
-    margin: 0.5em;
-}
-
-
-* p,
-a {
-    color: white;
-}
-
-.block>h1,
-.block-day>h3 {
-    color: white;
-    width: auto;
-    text-align: center;
+    border-radius: 0.3em;
 }
 
 .background {
     background-color: rgba(0.3, 30, 30, 30, 0.7);
-    width: 100%;
-    height: 720px;
+    width: 70%;
+    height: 450px;
     font-family: sans-serif;
-    width: 100%;
     padding: 1em;
     color: white;
 }
 
-.form-header {
-    color: white;
+.block {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: rgba(184, 166, 166, 0.);
+    width: 70%;
     text-align: center;
-    font-size: 25px;
+    margin: 0.5em;
     padding: 0.5em;
+    border: solid 1px rgba(0.3, 30, 30, 30);
 }
 
-* input,
-.background input[type="submit"] {
+.block-person>.Persona {
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    border-radius: 1em;
+}
+
+.block-event {
+    margin: auto;
+}
+
+.block>h1,
+.block-event>h3 {
     color: white;
-    background-color: white;
-    padding: 1.2em;
-}
-
-.background input {
-    border: 1px solid white;
-    width: 100%;
-    padding: 5px;
-    background: transparent;
-    color-scheme: dark
-    ;
-}
-
-
-input[type="radio"],
-input[type="checkbox"] {
     width: auto;
-    margin-top: 5px;
-    padding: 0.5em;
 }
 
-button {
-    background-color:white;
-    padding: 1em;
-    width: 100%;
-    
+.me {
+    margin-top: 0.5em;
 }
 
-fieldset {
-    border: none;
-    margin: 1em;
+.logo_white {
+    height: 8em;
+    width: 10em;
 }
-
 
 /* End of MAIN start of FOOTER */
 
-
 /* FIX FOOTER WHEN QUERY OVERLAP */
 footer {
-    margin-top: 8em;
+    margin-top: 5em;
     bottom: 0;
     background-color: rgba(0.3, 30, 30, 30, 0.7);
     height: 10vh;
     width: 100%;
     border-top: 1px solid rgb(33, 33, 33);
-}
-
-/* End of FOOTER start of querys */
-@media (min-width: 1100px) {
-    main {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-    }
-    .background {
-        width: 55%;
-    }
-    img:hover {
-        opacity: 1;
-    }
-    input {
-        cursor: pointer;
-        width: 40%;
-        color-scheme: dark;
-    }
-    
-}
-
-
-@media (max-width: 500px) {
-
-    main {
-        width: 90%;
-    }
-
-    button {
-        width: 100%;
-    }
-    button:hover {
-        background-color:var(--blue_hover);
-    }
 }

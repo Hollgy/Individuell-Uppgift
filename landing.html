@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/landing.css">
+    <link rel="variables" href="/static/var.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=PT+Sans&display=swap" rel="stylesheet">
@@ -30,17 +31,10 @@
                 <p>På Schemat står bland annat presentationer av relevanta tlare som bl.a Sam Hyde, Kevin Powell och
                     Linus Torvalds</p>
             </div>
-        </div>
-
-        <div class="block-day">
             <h3>Fredag 9/12</h3>
             <a href="/day1/index.html"><strong>Klicka här för att läsa mer om Fredagen</strong></a>
-        </div>
-        <div class="block-day">
             <h3>Lördag 10/12</h3>
             <a href="/day2/index.html"><strong>Klicka här för att läsa mer om Lördagen</strong></a>
-        </div>
-        <div class="block-day">
             <h3>Söndag 11/12</h3>
             <a href="/day3/index.html"><strong>Klicka här för att läsa mer om Söndagen</strong></a>
         </div>
@@ -67,42 +61,40 @@
                 <br>
                 <label for="number">Telefonnummer:</label>
                 <input type="tel" name="nummer" id="number" placeholder="Telefonnummer" required minlength="7" maxlength="10">
-            </form>
-
-            <fieldset>
-                <select name="dagar" id="days">
-                    <option value="Besöksdagar" disabled selected>Besöksdagar</option>
-                    <option value="Alla Dagar"></option>
-                    <option value="Fredag"></option>
-                    <option value="Lördag"></option>
-                    <option value="Söndag"></option>
-                </select>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Jag är:</legend>
-                <div>
-                    <label for="Man">Man</label>
-                    <input type="radio" id="male" name="gender" value="M">
-                </div>
-                <div>
+                
+                <fieldset>
+                    <select name="dagar" id="days">
+                        <option value="Besöksdagar" disabled selected>Besöksdagar</option>
+                        <option value="Alla_Dagar">Alla Dagar</option>
+                        <option value="Fredag">Fredagen</option>
+                        <option value="Lördag">Lördagen</option>
+                        <option value="Söndag">Söndagen</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Jag är:</legend>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="M">
+                        <label for="Man">Man</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="K">
                     <label for="Kvinna">Kvinna</label>
-                    <input type="radio" id="female" name="gender" value="K">
                 </div>
                 <div>
-                    <label for="other">Övrigt</label>
                     <input type="radio" id="other" name="gender" value="O">
+                    <label for="other">Övrigt</label>
                 </div>
             </fieldset>
             <div>
                 <input type="checkbox" name="Godkänner" id="agree">
-                <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
+                <label for="agree">Spara mina uppgifter</label>
             </div>
             <p>Pris för en dag: 250kr</p>
             <p>Pris för hela helgen: 700kr</p>
-            <div class="submit">
-                <input type="submit" value="Submit">
-            </div>
+                <button type="submit">Skicka</button>
+        </form>
         </div>
     </main>
     
