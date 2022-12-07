@@ -10,14 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/images/pexels-neo-2653362.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), url(/images/pexels-neo-2653362.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 
 /* End of BODY start of HEADER  */
-
 
 header {
     display: flex;
@@ -26,7 +25,7 @@ header {
     height: 8vh;
     width: 100%;
     border-bottom: 1px solid rgb(33, 33, 33);
-    background-color: rgba(0.3, 30, 30, 30, 0.7);
+    background-color:var(--black_hover);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -45,13 +44,19 @@ svg {
     border-radius: 0.3em;
 }
 
-.link-landing {
+.link {
     text-decoration: none;
+    gap: 4px;
+    border: 12px;
     width: 2em;
     height: 1.2em;
     padding: 0.5em;
-    background-color: blueviolet;
     border-radius: 0.3em;
+    background-color: black;
+}
+
+.link:hover {
+    transition: ;
 }
 
 /* End of HEADER Start of MAIN */
@@ -71,7 +76,6 @@ main {
     text-align: center;
     margin: 0.5em;
 }
-
 
 * p,
 a {
@@ -102,13 +106,6 @@ a {
     padding: 0.5em;
 }
 
-* input,
-.background input[type="submit"] {
-    color: white;
-    background-color: white;
-    padding: 1.2em;
-}
-
 .background input {
     border: 1px solid white;
     width: 100%;
@@ -117,7 +114,6 @@ a {
     color-scheme: dark
     ;
 }
-
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -137,7 +133,6 @@ fieldset {
     border: none;
     margin: 1em;
 }
-
 
 /* End of MAIN start of FOOTER */
 
@@ -169,6 +164,13 @@ footer {
         cursor: pointer;
         width: 40%;
         color-scheme: dark;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: green;
+        transition: 350ms;
+        color: white;    
     }
     
 }

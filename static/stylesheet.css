@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../static/images/pexels-neo-2653362.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)),  url(../static/images/pexels-neo-2653362.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;

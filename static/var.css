@@ -1,5 +1,5 @@
 :root {
     --blue_hover:rgba(0, 60, 128, 0.75);
-    
-
+    --black_hover: rgba(0.3, 30, 30, 30, 0.7);
+    --white_text: rgb(255,250,250);
 }

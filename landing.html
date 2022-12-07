@@ -19,8 +19,8 @@
     <header>
         <img class="logotyp" src="/images/Better_web_black.png" alt="logotyp">
 
-        <div><a class="link-landing" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
-        <div><a class="link-landing" href="/about/index.html">Om oss</a></div>
+        <div><a class="link" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
+        <div><a class="link" href="/about/index.html">Om oss</a></div>
     </header>
 
     <main>
@@ -60,44 +60,51 @@
                 <input type="text" name="zip" id="zip" placeholder="Postkod" required minlength="5" maxlength="6">
                 <br>
                 <label for="number">Telefonnummer:</label>
-                <input type="tel" name="nummer" id="number" placeholder="Telefonnummer" required minlength="7" maxlength="10">
-                
-                <fieldset>
-                    <select name="dagar" id="days">
-                        <option value="Besöksdagar" disabled selected>Besöksdagar</option>
-                        <option value="Alla_Dagar">Alla Dagar</option>
-                        <option value="Fredag">Fredagen</option>
-                        <option value="Lördag">Lördagen</option>
-                        <option value="Söndag">Söndagen</option>
-                    </select>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Jag är:</legend>
+                <input type="tel" name="nummer" id="number" placeholder="Telefonnummer" required minlength="7"
+                    maxlength="10">
+
+                <h3>Välj dagar</h3>
+                <div class="days">
+                    <div>
+                        <input type="checkbox" id="male" name="gender" value="M">
+                        <label for="Man">Fredag</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="male" name="gender" value="M">
+                        <label for="Man">Lördag</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="male" name="gender" value="M">
+                        <label for="Man">Söndag</label>
+                    </div>
+                </div>
+                <div class="gender">
                     <div>
                         <input type="radio" id="male" name="gender" value="M">
                         <label for="Man">Man</label>
                     </div>
                     <div>
                         <input type="radio" id="female" name="gender" value="K">
-                    <label for="Kvinna">Kvinna</label>
+                        <label for="Kvinna">Kvinna</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="O">
+                        <label for="other">Övrigt</label>
+                    </div>
                 </div>
                 <div>
-                    <input type="radio" id="other" name="gender" value="O">
-                    <label for="other">Övrigt</label>
+                    <input type="checkbox" name="Godkänner" id="agree">
+                    <label for="agree">Spara mina uppgifter</label>
                 </div>
-            </fieldset>
-            <div>
-                <input type="checkbox" name="Godkänner" id="agree">
-                <label for="agree">Spara mina uppgifter</label>
-            </div>
-            <p>Pris för en dag: 250kr</p>
-            <p>Pris för hela helgen: 700kr</p>
+                <div class="price">
+                    <p>Pris för en dag: 250kr</p>
+                    <p>Pris för hela helgen: 700kr</p>
+                </div>
                 <button type="submit">Skicka</button>
-        </form>
+            </form>
         </div>
     </main>
-    
+
     <footer>
         <div></div>
     </footer>
