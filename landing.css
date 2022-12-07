@@ -56,10 +56,11 @@ svg {
 
 /* End of HEADER Start of MAIN */
 main {
-    min-height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    min-height: 100%;
+    width: 80%;
     margin: 0.5em;
 }
 
@@ -85,7 +86,7 @@ a {
 .background {
     background-color: rgba(0.3, 30, 30, 30, 0.7);
     width: 100%;
-    height: 650px;
+    height: 720px;
     font-family: sans-serif;
     width: 100%;
     padding: 1em;

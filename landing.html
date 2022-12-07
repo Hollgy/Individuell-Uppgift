@@ -16,15 +16,13 @@
 <body>
 
     <header>
-        <img class="logotyp" src="/static/images/Better web black.png" alt="logotyp">
+        <img class="logotyp" src="/images/Better_web_black.png" alt="logotyp">
 
         <div><a class="link-landing" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
         <div><a class="link-landing" href="/about/index.html">Om oss</a></div>
-
     </header>
 
     <main>
-
         <div class="block">
             <h1>Bättre Webb välkommnar dig till årets event</h1>
             <div class="eventblock">
@@ -48,41 +46,66 @@
         </div>
 
         <div class="background">
-            <p class="form-header">Anmäl Dig</p>
-            <label>Epost Adress: </label>
-            <input type="email" pattern="[A-Öa-ö0-9._-+]+@[A-Za-z0-9-]+/.[a-z] {2,}" required>
-            <label>Förnamn: </label>
-            <input type="text" name="firstname" id="first_name" required>
-            <label>Efternamn: </label>
-            <input type="text" name="surname" id="first_name" required>
-            <label>Födelsedatum: </label>
-            <input type="date" name="date" id="date" value="2000-01-01" required>
-            <label>Adress: </label>
-            <input type="text" name="adress" id="adress" required>
-            <label>Postkod: </label>
-            <input type="text" name="zip" id="zip" required minlength="5" maxlength="6">
-            <label>Telefonnummer: </label>
-            <input type="tel" name="Nummer" id="Phonenmbr" required minlength="7" maxlength="10">
+            <form action="action_page.php">
+                <p class="form-header">Anmäl Dig</p>
+                <label for="email">Epost Adress:</label>
+                <input type="email" pattern="[A-Za-z0-9._-+]+@[A-Za-z0-9-]+.[a-z]{2,}" placeholder="Email" required>
+                <label for="first_name">Förnamn:</label>
+                <input type="text" name="firstname" id="first_name" placeholder="Förnamn" minlenght="2">
+                <br>
+                <label for="last_name">Efternamn:</label>
+                <input type="text" name="surname" id="last_name" placeholder="Efternamn" minlenght="2">
+                <br>
+                <label for="date">Födelsedatum:</label>
+                <input type="date" name="birth" id="date" required>
+                <br>
+                <label for="adress">Adress:</label>
+                <input type="text" name="adress" id="adress" placeholder="Adress" required>
+                <br>
+                <label for="zip">Postkod:</label>
+                <input type="text" name="zip" id="zip" placeholder="Postkod" required minlength="5" maxlength="6">
+                <br>
+                <label for="number">Telefonnummer:</label>
+                <input type="tel" name="nummer" id="number" placeholder="Telefonnummer" required minlength="7" maxlength="10">
+            </form>
 
             <fieldset>
-                <legend>Välj ditt kön:</legend>
+                <select name="dagar" id="days">
+                    <option value="Besöksdagar" disabled selected>Besöksdagar</option>
+                    <option value="Alla Dagar"></option>
+                    <option value="Fredag"></option>
+                    <option value="Lördag"></option>
+                    <option value="Söndag"></option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Jag är:</legend>
                 <div>
                     <label for="Man">Man</label>
-                    <input type="radio" id="gender" name="gender" value="M">
+                    <input type="radio" id="male" name="gender" value="M">
                 </div>
                 <div>
                     <label for="Kvinna">Kvinna</label>
-                    <input type="radio" id="gender" name="gender" value="K">
+                    <input type="radio" id="female" name="gender" value="K">
+                </div>
+                <div>
+                    <label for="other">Övrigt</label>
+                    <input type="radio" id="other" name="gender" value="O">
                 </div>
             </fieldset>
             <div>
                 <input type="checkbox" name="Godkänner" id="agree">
                 <label for="agree">Jag godkänner att ni sparar mina uppgifter</label>
             </div>
-            <div class="submit"> <input type="submit" value="Submit"></div>
+            <p>Pris för en dag: 250kr</p>
+            <p>Pris för hela helgen: 700kr</p>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
         </div>
     </main>
-
+    
     <footer>
         <div></div>
     </footer>
