@@ -176,9 +176,13 @@ footer {
     border-radius: 0.3em;
 }
 .icon {
-    height: 3em;
-    width: 3em;
+    height: 1.5em;
+    width: 1.5em;
     opacity: 0.6;
+}
+
+section {
+    font-size:65%;
 }
 
 /* End of FOOTER start of querys */
@@ -230,6 +234,16 @@ footer {
         transition: 350ms;
         color: white;
     }
+    .icon {
+        height: 3em;
+        width: 3em;
+        opacity: 0.6;
+    }
+    
+    section {
+        font-size: 95%;
+    }
+
 }
 
 @media (max-width: 580px) {
