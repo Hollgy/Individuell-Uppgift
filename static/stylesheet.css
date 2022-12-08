@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nonito Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
     box-sizing: border-box;
 }
+
 :root {
     --blue_hover: rgba(0, 60, 128, 0.75);
     --black_hover: rgba(0.3, 30, 30, 30, 0.7);
@@ -20,7 +20,6 @@ h3 {
     color: var(--white);
 }
 
-
 main>h1 {
     margin-left: 50%;
     margin-right: 50%;
@@ -31,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)),  url(../static/images/pexels-neo-2653362.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), url(/static/images/pexels-neo-2653362.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -53,13 +52,17 @@ header {
     margin-bottom: 0.2em;
 }
 
-img {
+.logo_black {
     height: 3em;
     width: 5em;
     opacity: 0.6;
     border-radius: 0.3em;
 }
-
+.link {
+    text-decoration: none;
+    background-color: var(--blur);
+    position: relative;
+}
 
 /* End of HEADER Start of MAIN */
 main {
@@ -117,35 +120,12 @@ main {
 }
 
 * input,
-.background input[type="submit"] {
-    color: white;
-    background-color: white;
-    padding: 1.2em;
-}
-
 .background input {
     border: 1px solid white;
     width: 100%;
     padding: 5px;
     background: transparent;
     color-scheme: dark;
-}
-
-.background input[type="submit"] {
-    color: black;
-    padding: 1.2em;
-    cursor: pointer;
-    margin: 0.3em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 0.2em;
-}
-
-.background input[type="submit"]:focus {
-    color: black;
-    padding: 1.2em;
-    cursor: pointer;
-    margin: 0.3em;
-    background-color: green;
 }
 
 input[type="radio"],
@@ -168,34 +148,19 @@ fieldset {
     border: none;
     margin: 1em;
 }
-.link {
-    text-decoration: none;
-    background-color:var(--blur);
-    position: relative;
-}
 
-.link::after {
-    content:'';
-    position: absolute;
-    left: 0;
-    bottom: 0;
+button {
+    background-color: white;
+    padding: 1em;
     width: 100%;
-    height: 2px;
-    background-color: currentColor;
-    
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 200ms ease-in;
-}
-.link:hover::after {
-    transform: scaleX(1);
-    transform-origin: right;
 }
 
 /* End of MAIN start of FOOTER */
 
-/* FIX FOOTER WHEN QUERY OVERLAP */
 footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 5em;
     bottom: 0;
     background-color: rgba(0.3, 30, 30, 30, 0.7);
@@ -204,9 +169,21 @@ footer {
     border-top: 1px solid rgb(33, 33, 33);
 }
 
+.logo_white {
+    height: 3em;
+    width: 5em;
+    opacity: 0.6;
+    border-radius: 0.3em;
+}
+.icon {
+    height: 3em;
+    width: 3em;
+    opacity: 0.6;
+}
+
 /* End of FOOTER start of querys */
-@media screen (min-width: 1500px) {
-    .background {
+@media (min-width:581px) {
+    .main {
         background-color: rgba(0.3, 30, 30, 30, 0.7);
         width: 15%;
         height: 450px;
@@ -224,62 +201,40 @@ footer {
         width: 40%;
         color-scheme: dark;
     }
-
-
-}
-
-@media (min-width: 800px) {
-    main {
-        display: flex;
-        justify-content: center;
-        width: 100%
+    .link {
+        text-decoration: none;
+        background-color: var(--blur);
+        position: relative;
     }
-
-    .block:hover,
-    .block-day:hover {
-        background-color: rgba(0, 60, 128, 0.75);
-        transition: 230ms ease-in;
+    
+    .link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 200ms ease-in;
     }
-
-    .background,
-    .block,
-    .block-day {
-        width: 45%;
+    
+    .link:hover::after {
+        transform: scaleX(1);
+        transform-origin: right;
     }
-
-    .background:hover {
-        background-color: rgba(0, 60, 128, 0.75);
-        transition: 230ms ease-in;
-    }
-
-    input {
+    button:hover {
         cursor: pointer;
-        width: 40%;
-        color-scheme: dark;
-    }
-
-    img:hover {
-        opacity: 1;
+        background-color: green;
+        transition: 350ms;
+        color: white;
     }
 }
 
-@media (min-width: 700px) {
+@media (max-width: 580px) {
 
-    .background {
-        width: 50%;
-    }
-
-    input {
-        cursor: pointer;
-        width: 40%;
-        color-scheme: dark;
-    }
-
-}
-
-@media (min-width: 500px) {
-
-    .background {
+    .main {
         width: 50%;
     }
 }

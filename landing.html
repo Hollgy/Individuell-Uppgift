@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BwSeimnar</title>
     <link rel="stylesheet" href="/landing.css">
     <link rel="variables" href="/static/var.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,8 @@
 <body>
 
     <header>
-        <img class="logotyp" src="/images/Better_web_black.png" alt="logotyp">
-
         <div><a class="link" href="http://127.0.0.1:5500/landing.html">Till start</a></div>
+        <a href="/landing.html"><img class="logo_black" src="/images/Better_web_black.png" alt="logotyp"></a>
         <div><a class="link" href="/about/index.html">Om oss</a></div>
     </header>
 
@@ -31,16 +30,16 @@
                 <p>På Schemat står bland annat presentationer av relevanta tlare som bl.a Sam Hyde, Kevin Powell och
                     Linus Torvalds</p>
             </div>
-            <h3>Fredag 9/12</h3>
-            <a href="/day1/index.html"><strong>Klicka här för att läsa mer om Fredagen</strong></a>
-            <h3>Lördag 10/12</h3>
-            <a href="/day2/index.html"><strong>Klicka här för att läsa mer om Lördagen</strong></a>
-            <h3>Söndag 11/12</h3>
-            <a href="/day3/index.html"><strong>Klicka här för att läsa mer om Söndagen</strong></a>
+            <h2>Fredag 9/12</h2>
+            <a class="link" href="/day1/index.html"><strong>Klicka här för att läsa mer om Fredagen</strong></a>
+            <h2>Lördag 10/12</h2>
+            <a class="link" href="/day2/index.html"><strong>Klicka här för att läsa mer om Lördagen</strong></a>
+            <h2>Söndag 11/12</h2>
+            <a class="link" href="/day3/index.html"><strong>Klicka här för att läsa mer om Söndagen</strong></a>
         </div>
 
         <div class="background">
-            <form action="action_page.php">
+            <form action="">
                 <p class="form-header">Anmäl Dig</p>
                 <label for="email">Epost Adress:</label>
                 <input type="email" pattern="[A-Za-z0-9._-+]+@[A-Za-z0-9-]+.[a-z]{2,}" placeholder="Email" required>
@@ -63,51 +62,56 @@
                 <input type="tel" name="nummer" id="number" placeholder="Telefonnummer" required minlength="7"
                     maxlength="10">
                 <div class="buttons__block">
-                <h3>Välj dagar</h3>
-                <div class="days">
-                    <div>
-                        <input type="checkbox" id="male" name="gender" value="M">
-                        <label for="Man">Fredag</label>
+                    <h3>Välj dagar</h3>
+                    <div class="days">
+                        <div>
+                            <input type="checkbox" id="male" name="gender" value="M">
+                            <label for="Man">Fredag</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="male" name="gender" value="M">
+                            <label for="Man">Lördag</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="male" name="gender" value="M">
+                            <label for="Man">Söndag</label>
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <div>
+                            <input type="radio" id="male" name="gender" value="M">
+                            <label for="Man">Man</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="gender" value="K">
+                            <label for="Kvinna">Kvinna</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other" name="gender" value="O">
+                            <label for="other">Övrigt</label>
+                        </div>
                     </div>
                     <div>
-                        <input type="checkbox" id="male" name="gender" value="M">
-                        <label for="Man">Lördag</label>
+                        <input type="checkbox" name="Godkänner" id="agree">
+                        <label for="agree">Spara mina uppgifter</label>
                     </div>
-                    <div>
-                        <input type="checkbox" id="male" name="gender" value="M">
-                        <label for="Man">Söndag</label>
+                    <div class="price">
+                        <p>Pris för en dag: 250kr</p>
+                        <p>Pris för hela helgen: 700kr</p>
                     </div>
                 </div>
-                <div class="gender">
-                    <div>
-                        <input type="radio" id="male" name="gender" value="M">
-                        <label for="Man">Man</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="female" name="gender" value="K">
-                        <label for="Kvinna">Kvinna</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="other" name="gender" value="O">
-                        <label for="other">Övrigt</label>
-                    </div>
-                </div>
-                <div>
-                    <input type="checkbox" name="Godkänner" id="agree">
-                    <label for="agree">Spara mina uppgifter</label>
-                </div>
-                <div class="price">
-                    <p>Pris för en dag: 250kr</p>
-                    <p>Pris för hela helgen: 700kr</p>
-                </div>
-            </div>
                 <button type="submit">Skicka</button>
             </form>
         </div>
     </main>
 
     <footer>
-        <div></div>
+        <img class="logo_white" src="/static/images/Better web white.png" alt="logotyp">
+        <div class="icons">
+            <a href="https://www.facebook.com/"><img class="icon" src="/static/images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img class="icon" src="/static/images/instagram (1).png" alt=""></a>
+            <a href="https://se.linkedin.com/"><img class="icon" src="/static/images/linkedin.png" alt=""></a>´
+        </div>
     </footer>
 
 </body>
