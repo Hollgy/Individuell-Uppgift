@@ -12,6 +12,7 @@
     --dark_border: 1px solid rgb(33, 33, 33);
     --blur: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65))
 }
+/* :root adderades i ett senare skede för att kunna enkelt addera variabler, detta visade sig vara ett misstag när jag senare skulle koppla allt. jag skulle gjort detta från första början, läxan lärd till nästa gång */
 
 * p,
 a,
