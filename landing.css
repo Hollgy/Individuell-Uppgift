@@ -151,7 +151,6 @@ fieldset {
 
 .buttons__block {
     padding: 1%;
-    border: var(--dark_border);
 }
 
 .price {
