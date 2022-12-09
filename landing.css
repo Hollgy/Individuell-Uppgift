@@ -28,7 +28,7 @@ a,
 h3,
 h2,
 h1 {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 /* End of BODY start of HEADER  */
@@ -101,7 +101,7 @@ main {
 
 .block>h1,
 .block-day>h3 {
-    color: white;
+    color: #ffffff;
     width: auto;
     text-align: center;
 }
@@ -113,18 +113,18 @@ main {
     font-family: sans-serif;
     width: 100%;
     padding: 1em;
-    color: white;
+    color: #ffffff;
 }
 
 .form-header {
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-size: 25px;
     padding: 0.5em;
 }
 
 .background input {
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     width: 100%;
     padding: 5px;
     background: transparent;
@@ -139,7 +139,7 @@ input[type="checkbox"] {
 }
 
 button {
-    background-color: white;
+    background-color: #ffffff;
     padding: 1em;
     width: 100%;
 }
@@ -210,9 +210,9 @@ section {
 
     button:hover {
         cursor: pointer;
-        background-color: green;
+        background-color: #008000;
         transition: 350ms;
-        color: white;
+        color: #ffffff;
     }
     .icon {
         height: 3em;
